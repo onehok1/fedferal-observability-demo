@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/onehok1/fedferal-observability-demo.git  
     targetRevision: HEAD
-    path: apps  # <- replace with the actual folder path in your repo
+    path: apps/grafana-stack  # <- replace with the actual folder path in your repo
   project: default
   syncPolicy:
     automated:
