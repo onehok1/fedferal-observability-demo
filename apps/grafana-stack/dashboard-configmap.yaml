@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mission-critical-dashboard
+  namespace: monitoring
+  labels:
+    grafana_dashboard: "1"
+data:
+  mission_critical_dashboard.json: |
+    { "dashboard": "Your dashboard JSON goes here..." }

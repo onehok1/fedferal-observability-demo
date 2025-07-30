@@ -1,0 +1,17 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: failed-login-alerts
+  namespace: monitoring
+spec:
+  groups:
+  - name: security.rules
+    rules:
+    - alert: HighFailedLoginRate
+      expr: increase(failed_login_total[1m]) > 50
+      for: 1m
+      labels:
+        severity: critical
+      annotations:
+        summary: "High rate of failed login attempts"
+        description: "More than 50 failed login attempts detected in the past minute. Potential brute force or unauthorized access attempt."

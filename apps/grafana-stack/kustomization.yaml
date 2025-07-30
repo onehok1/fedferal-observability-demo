@@ -1,0 +1,6 @@
+resources:
+- prometheus.yaml
+- loki.yaml
+- grafana-operator.yaml
+- dashboard-configmap.yaml
+- alert-rules.yaml
