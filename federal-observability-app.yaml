@@ -9,7 +9,7 @@ spec:
     namespace: default
     server: 'https://kubernetes.default.svc'
   source:
-    repoURL: https://github.com/onehok1/federal-observability-demo.git
+    repoURL: https://github.com/onehok1/fedferal-observability-demo.git  
     targetRevision: HEAD
     path: apps  # <- replace with the actual folder path in your repo
   project: default
