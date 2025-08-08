@@ -10,7 +10,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: https://github.com/onehok1/fedferal-observability-demo.git  
-    targetRevision: HEAD
+    targetRevision: main
     path: apps/grafana-stack  # <- replace with the actual folder path in your repo
   project: default
   syncPolicy:
