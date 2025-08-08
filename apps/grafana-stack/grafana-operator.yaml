@@ -1,10 +1,10 @@
-apiVersion: helm.cattle.io/v1
-kind: HelmChart
-metadata:
-  name: grafana-operator
-  namespace: monitoring
-spec:
-  chart: grafana-operator
-  repo: https://grafana.github.io/helm-charts
-  targetNamespace: monitoring
-  version: 5.19.4
+#apiVersion: helm.cattle.io/v1
+#kind: HelmChart
+#metadata:
+#  name: grafana-operator
+#  namespace: monitoring
+#spec:
+#  chart: grafana-operator
+#  repo: https://grafana.github.io/helm-charts
+#  targetNamespace: monitoring
+#  version: 5.19.4
